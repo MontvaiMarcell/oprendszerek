@@ -7,5 +7,5 @@ Hour=`date +%H`
 Minute=`date +%M`
 Second=`date +%S`
 echo `date`
-echo "jelenlegi dátum: $Day-$Month-$Year"
+echo "jelenlegi dátum: $Year-$Month-$Day"
 echo "Jelenlegi idő: $Hour:$Minute:$Second"
