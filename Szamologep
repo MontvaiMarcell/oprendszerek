@@ -6,9 +6,10 @@ read b
 
 echo "Adja meg a múvelet számjegyét"
 echo "1. összeadás"
-echo "Kivonás"
-echo "Szorzás"
-echo "Osztás"
+echo "2. Kivonás"
+echo "3. Szorzás"
+echo "4. Osztás"
+read ch
 
 case $ch in
   1)res=`echo $a + $b | bc`
