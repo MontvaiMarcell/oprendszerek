@@ -1,0 +1,23 @@
+!/bin/bash
+
+echo "Adjon meg két számot"
+read a
+read b
+
+echo "Adja meg a múvelet számjegyét"
+echo "1. összeadás"
+echo "Kivonás"
+echo "Szorzás"
+echo "Osztás"
+
+case $ch in
+  1)res=`echo $a + $b | bc`
+  ;;
+  2)res=`echo $a - $b | bc`
+  ;;
+  3)res=`echo $a \* $b | bc`
+  ;;
+  4)res=`echo "scale=2; $a / $b" | bc`
+  ;;
+esac
+echo "Eredmény: $res"
